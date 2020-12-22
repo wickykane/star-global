@@ -1,0 +1,8 @@
+<div class="p-3 demo-container">
+  <div class="form-group col-3">
+    <label for="duration">Transition Duration (ms)</label>
+    <input (click)="onClickInput($event)" [(ngModel)]="duration" type="number" class="form-control" id="duration"
+      placeholder="Please Input">
+  </div>
+  <app-square [duration]="duration" [position]="position"></app-square>
+</div>
